@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  padding: 1.2rem 3rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  border-radius: 1rem;
+  background-color: red;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+}
+
+.image {
+  width: 100px;
+  margin-bottom: 3rem;
+}
+
+.col {
+  padding: 4rem 3rem;
+  position: relative;
+  height: 100%;
+}
+.col:nth-child(1) {
+  background-color: var(--bright-orange);
+}
+
+.col:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+
+.col:nth-child(3) {
+  background-color: var(--very-dark-cyan);
+}
+
+.col h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.col p {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  margin-bottom: 8rem;
+  color: var(--transparent-white);
+}
+
+.col .btn {
+  position: absolute;
+  bottom: 4rem;
+  left: 15%;
+  font-weight: 700;
+}
+
+.col .btn.btn-1 {
+  color: var(--bright-orange);
+}
+
+.col .btn.btn-2 {
+  color: var(--dark-cyan);
+}
+
+.col .btn.btn-3 {
+  color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 65%;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 80%;
+  }
+}
