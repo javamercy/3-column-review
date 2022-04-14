@@ -99,22 +99,42 @@ img {
   bottom: 4rem;
   left: 15%;
   font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .col .btn.btn-1 {
   color: var(--bright-orange);
 }
 
+.col .btn.btn-1:hover {
+  color: var(--very-light-gray);
+  background-color: transparent;
+  outline: 3px solid var(--very-light-gray);
+}
+
 .col .btn.btn-2 {
   color: var(--dark-cyan);
+}
+
+.col .btn.btn-2:hover {
+  color: var(--very-light-gray);
+  background-color: transparent;
+  outline: 3px solid var(--very-light-gray);
 }
 
 .col .btn.btn-3 {
   color: var(--very-dark-cyan);
 }
 
+.col .btn.btn-3:hover {
+  color: var(--very-light-gray);
+  background-color: transparent;
+  outline: 3px solid var(--very-light-gray);
+}
+
 @media screen and (max-width: 768px) {
-  body{
+  body {
     margin: 5rem 0;
   }
   .container {
